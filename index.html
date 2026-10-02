@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NØVA STREET | Urban Clothing</title>
+
+    <meta
+        name="description"
+        content="NØVA STREET - Tienda de ropa urbana, sneakers y accesorios."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================
+         TOP BAR
+    ======================================= -->
+
+    <div class="top-bar">
+        ENVÍO GRATIS EN PEDIDOS SUPERIORES A $80
+    </div>
+
+
+    <!-- ======================================
+         HEADER
+    ======================================= -->
+
+    <header class="header">
+
+        <a href="#inicio" class="logo">
+            NØVA<span>STREET</span>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Shop</a>
+            <a href="#colecciones">Colecciones</a>
+            <a href="#nosotros">Nosotros</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button
+                class="icon-btn"
+                id="searchBtn"
+                aria-label="Buscar"
+            >
+                🔍
+            </button>
+
+            <button
+                class="icon-btn cart-button"
+                id="cartBtn"
+                aria-label="Carrito"
+            >
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Abrir menú"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================
+         SEARCH
+    ======================================= -->
+
+    <div class="search-panel" id="searchPanel">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar productos..."
+        >
+
+        <button id="closeSearch">
+            ✕
+        </button>
+
+    </div>
+
+
+    <!-- ======================================
+         MAIN
+    ======================================= -->
+
+    <main>
+
+        <!-- ==================================
+             HERO
+        =================================== -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    NEW DROP / 2026
+                </span>
+
+                <h1>
+                    DEFINE<br>
+                    YOUR <span>STYLE.</span>
+                </h1>
+
+                <p>
+                    Ropa urbana diseñada para quienes
+                    convierten la calle en su propio escenario.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#productos"
+                        class="btn btn-primary"
+                    >
+                        Comprar ahora
+                    </a>
+
+                    <a
+                        href="#colecciones"
+                        class="btn btn-outline"
+                    >
+                        Ver colección
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=90"
+                    alt="Moda urbana NØVA STREET"
+                >
+
+                <div class="hero-overlay"></div>
+
+                <div class="hero-card">
+
+                    <span>DROP</span>
+
+                    <strong>01</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             CATEGORIES
+        =================================== -->
+
+        <section class="categories">
+
+            <a href="#productos" class="category">
+
+                <span>01</span>
+
+                <h3>HOODIES</h3>
+
+            </a>
+
+            <a href="#productos" class="category">
+
+                <span>02</span>
+
+                <h3>CAMISETAS</h3>
+
+            </a>
+
+            <a href="#productos" class="category">
+
+                <span>03</span>
+
+                <h3>PANTALONES</h3>
+
+            </a>
+
+            <a href="#productos" class="category">
+
+                <span>04</span>
+
+                <h3>SNEAKERS</h3>
+
+            </a>
+
+            <a href="#productos" class="category">
+
+                <span>05</span>
+
+                <h3>ACCESORIOS</h3>
+
+            </a>
+
+        </section>
+
+
+        <!-- ==================================
+             PRODUCTS
+        =================================== -->
+
+        <section
+            class="products-section"
+            id="productos"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        SHOP / 01
+                    </span>
+
+                    <h2>
+                        PRODUCTOS DESTACADOS
+                    </h2>
+
+                </div>
+
+                <p>
+                    Descubre nuestra selección de
+                    prendas urbanas para construir
+                    tu propio estilo.
+                </p>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="filters">
+
+                <button
+                    class="filter active"
+                    data-category="todos"
+                >
+                    Todos
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="camisetas"
+                >
+                    Camisetas
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="hoodies"
+                >
+                    Hoodies
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="pantalones"
+                >
+                    Pantalones
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="sneakers"
+                >
+                    Sneakers
+                </button>
+
+                <button
+                    class="filter"
+                    data-category="accesorios"
+                >
+                    Accesorios
+                </button>
+
+            </div>
+
+
+            <!-- ==================================
+                 PRODUCT GRID
+            =================================== -->
+
+            <div
+                class="products-grid"
+                id="productsGrid"
+            >
+
+
+                <!-- PRODUCTO 1 -->
+
+                <article
+                    class="product-card"
+                    data-category="camisetas"
+                    data-name="Essential Oversized Tee"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=90"
+                            alt="Essential Oversized Tee"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Essential Oversized Tee
+                            </h3>
+
+                            <p>
+                                Camiseta oversized
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $35.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Essential Oversized Tee"
+                        data-price="35"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+
+                <article
+                    class="product-card"
+                    data-category="hoodies"
+                    data-name="Shadow Oversized Hoodie"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            HOT
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=900&q=90"
+                            alt="Shadow Oversized Hoodie"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Shadow Oversized Hoodie
+                            </h3>
+
+                            <p>
+                                Hoodie heavyweight
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $69.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Shadow Oversized Hoodie"
+                        data-price="69"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+
+                <article
+                    class="product-card"
+                    data-category="pantalones"
+                    data-name="Cargo Utility Pants"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=90"
+                            alt="Cargo Utility Pants"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Cargo Utility Pants
+                            </h3>
+
+                            <p>
+                                Pantalón cargo
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $59.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Cargo Utility Pants"
+                        data-price="59"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+
+                <article
+                    class="product-card"
+                    data-category="sneakers"
+                    data-name="NØVA Runner X"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            LIMITED
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=90"
+                            alt="NØVA Runner X sneakers"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                NØVA Runner X
+                            </h3>
+
+                            <p>
+                                Sneakers urbanos
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $89.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="NØVA Runner X"
+                        data-price="89"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 5 -->
+
+                <article
+                    class="product-card"
+                    data-category="camisetas"
+                    data-name="Street Graphic Tee"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=90"
+                            alt="Street Graphic Tee"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Street Graphic Tee
+                            </h3>
+
+                            <p>
+                                Graphic T-shirt
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $39.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Street Graphic Tee"
+                        data-price="39"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 6 -->
+
+                <article
+                    class="product-card"
+                    data-category="hoodies"
+                    data-name="NØVA Zip Hoodie"
+                >
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=900&q=90"
+                            alt="NØVA Zip Hoodie"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                NØVA Zip Hoodie
+                            </h3>
+
+                            <p>
+                                Zip hoodie
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $75.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="NØVA Zip Hoodie"
+                        data-price="75"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 7 -->
+
+                <article
+                    class="product-card"
+                    data-category="pantalones"
+                    data-name="Relaxed Denim"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=900&q=90"
+                            alt="Relaxed Denim"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                Relaxed Denim
+                            </h3>
+
+                            <p>
+                                Baggy jeans
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $65.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="Relaxed Denim"
+                        data-price="65"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+
+                <!-- PRODUCTO 8 -->
+
+                <article
+                    class="product-card"
+                    data-category="accesorios"
+                    data-name="NØVA Cap"
+                >
+
+                    <div class="product-image">
+
+                        <span class="badge">
+                            NEW
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=90"
+                            alt="NØVA Cap"
+                        >
+
+                        <button class="quick-view">
+                            Vista rápida
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <div>
+
+                            <h3>
+                                NØVA Cap
+                            </h3>
+
+                            <p>
+                                Gorra urbana
+                            </p>
+
+                        </div>
+
+                        <strong>
+                            $29.00
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="add-cart"
+                        data-name="NØVA Cap"
+                        data-price="29"
+                    >
+                        Añadir al carrito
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             COLLECTION
+        =================================== -->
+
+        <section
+            class="collection"
+            id="colecciones"
+        >
+
+            <div class="collection-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1600&q=90"
+                    alt="Colección urbana"
+                >
+
+            </div>
+
+            <div class="collection-overlay"></div>
+
+            <div class="collection-content">
+
+                <span>
+                    COLLECTION 01
+                </span>
+
+                <h2>
+                    BUILT FOR<br>
+                    THE <i>STREETS.</i>
+                </h2>
+
+                <p>
+                    Una colección inspirada en la energía
+                    de las ciudades, el arte y la cultura urbana.
+                </p>
+
+                <a
+                    href="#productos"
+                    class="btn btn-primary"
+                >
+                    Explorar colección
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             ABOUT
+        =================================== -->
+
+        <section
+            class="about"
+            id="nosotros"
+        >
+
+            <div class="about-title">
+
+                <span>
+                    ABOUT NØVA
+                </span>
+
+                <h2>
+                    MÁS QUE<br>
+                    ROPA.
+                </h2>
+
+            </div>
+
+            <div class="about-text">
+
+                <p>
+                    NØVA STREET nace de una idea sencilla:
+                    la ropa es una forma de expresión.
+                </p>
+
+                <p>
+                    Diseñamos prendas para personas que
+                    no siguen tendencias. Personas que
+                    crean su propio camino.
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>
+                            2026
+                        </strong>
+
+                        <span>
+                            Fundación
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            +10K
+                        </strong>
+
+                        <span>
+                            Comunidad
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>
+                            24/7
+                        </strong>
+
+                        <span>
+                            Street mindset
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================
+             NEWSLETTER
+        =================================== -->
+
+        <section class="newsletter">
+
+            <span>
+                STAY IN THE LOOP
+            </span>
+
+            <h2>
+                ÚNETE A LA<br>
+                COMUNIDAD.
+            </h2>
+
+            <p>
+                Recibe nuevos drops, descuentos y
+                lanzamientos directamente en tu correo.
+            </p>
+
+            <form id="newsletterForm">
+
+                <input
+                    type="email"
+                    placeholder="Tu correo electrónico"
+                    required
+                >
+
+                <button type="submit">
+                    SUSCRIBIRME →
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================
+         FOOTER
+    ======================================= -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a
+                    href="#inicio"
+                    class="logo"
+                >
+                    NØVA<span>STREET</span>
+                </a>
+
+                <p>
+                    Urban clothing for the next generation.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    SHOP
+                </h4>
+
+                <a href="#productos">
+                    Camisetas
+                </a>
+
+                <a href="#productos">
+                    Hoodies
+                </a>
+
+                <a href="#productos">
+                    Pantalones
+                </a>
+
+                <a href="#productos">
+                    Sneakers
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    AYUDA
+                </h4>
+
+                <a href="#">
+                    Envíos
+                </a>
+
+                <a href="#">
+                    Devoluciones
+                </a>
+
+                <a href="#">
+                    Preguntas frecuentes
+                </a>
+
+                <a href="#">
+                    Contacto
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    SOCIAL
+                </h4>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Pinterest
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 NØVA STREET.
+                Todos los derechos reservados.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacidad
+                </a>
+
+                <a href="#">
+                    Términos
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ======================================
+         OVERLAY
+    ======================================= -->
+
+    <div
+        class="overlay"
+        id="overlay"
+    ></div>
+
+
+    <!-- ======================================
+         CART
+    ======================================= -->
+
+    <aside
+        class="cart"
+        id="cart"
+    >
+
+        <div class="cart-header">
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <button id="closeCart">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
+
+            <div class="empty-cart">
+
+                <span>
+                    🛒
+                </span>
+
+                <p>
+                    Tu carrito está vacío.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    $0.00
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                FINALIZAR COMPRA
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ======================================
+         TOAST
+    ======================================= -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        Producto añadido al carrito ✓
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
